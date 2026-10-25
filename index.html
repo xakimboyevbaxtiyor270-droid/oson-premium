@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111827">
+<title>Oson Premium — Telegram Premium buyurtma</title>
+<style>
+:root{--bg:#0b1220;--panel:#141f31;--panel2:#1c2a40;--text:#f7f9ff;--muted:#a8b5c9;--blue:#56a8ff;--purple:#8b70ff;--green:#48d6a0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#202d52 0,transparent 35%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+.wrap{max-width:900px;margin:auto;padding:22px 16px 48px}.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:28px}.brand{font-weight:800;font-size:21px;letter-spacing:.2px}.brand span{color:var(--blue)}.pill{border:1px solid #34445d;color:#c6d7ef;border-radius:99px;padding:7px 11px;font-size:12px}
+.hero{text-align:center;padding:25px 10px 26px}.logo{display:inline-grid;place-items:center;width:68px;height:68px;border-radius:22px;background:linear-gradient(135deg,var(--blue),var(--purple));font-size:31px;font-weight:900;margin-bottom:14px;box-shadow:0 12px 35px #5b8cff33}
+h1{font-size:clamp(29px,6vw,43px);line-height:1.12;margin:0 0 12px}.hero p{color:var(--muted);max-width:570px;margin:0 auto}.notice{margin:18px auto 0;padding:11px 14px;border-radius:13px;background:#172c3b;border:1px solid #28566a;color:#c9f5ff;font-size:13px;max-width:560px}
+h2{font-size:21px;margin:0 0 15px}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 28px}.plan{background:linear-gradient(155deg,var(--panel2),var(--panel));border:1px solid #2d3c53;border-radius:18px;padding:17px 14px;position:relative}.plan .duration{font-size:18px;font-weight:800}.plan .price{font-size:20px;font-weight:800;color:#75bcff;margin:9px 0 4px}.plan .cost{font-size:12px;color:var(--muted)}.plan .profit{font-size:12px;color:var(--green);margin-top:7px}.tag{font-size:10px;background:#5b4ab2;padding:4px 7px;border-radius:7px;display:inline-block;margin-bottom:8px}
+.panel{background:#111b2b;border:1px solid #29384e;border-radius:20px;padding:20px;margin:18px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:13px;color:#d4deec;margin-bottom:7px}input,select,textarea{width:100%;padding:13px 12px;border:1px solid #34445c;border-radius:12px;background:#0b1423;color:white;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--blue)}.hint{font-size:12px;color:var(--muted);margin-top:6px}.summary{background:#18283b;border-radius:13px;padding:14px;margin-top:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}.summary strong{font-size:20px;color:#83c4ff}.btn{display:block;width:100%;border:0;border-radius:13px;padding:15px;background:linear-gradient(100deg,#3b9bff,#8168ff);color:white;font-size:16px;font-weight:800;margin-top:16px;cursor:pointer}.btn.secondary{background:#23334a;border:1px solid #3b506c}.status{display:none;margin-top:13px;padding:13px;background:#132e2a;border:1px solid #236c58;border-radius:12px;color:#c7ffeb;white-space:pre-wrap;overflow-wrap:anywhere}.admin{border-style:dashed}.admin summary{font-weight:800;cursor:pointer}.admin p{font-size:12px;color:var(--muted)}.admin .grid{margin-top:15px}.foot{text-align:center;color:#8292aa;font-size:12px;padding-top:16px}.small{font-size:12px;color:var(--muted)}@media(max-width:620px){.plans{grid-template-columns:1fr}.plan{display:grid;grid-template-columns:1fr auto;align-items:center;gap:3px 10px}.plan .price{margin:0}.plan .cost,.plan .profit{grid-column:1/-1}.grid{grid-template-columns:1fr}.wrap{padding-top:15px}.panel{padding:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav"><div class="brand">⚡ Oson <span>Premium</span></div><div class="pill">Tez • Oson • Qulay</div></header>
+  <section class="hero">
+    <div class="logo">OP</div>
+    <h1>Telegram Premium<br>buyurtma berish</h1>
+    <p>Kerakli muddatni tanlang, telefon raqamingizni qoldiring. Buyurtmangizni tekshirib, siz bilan bog‘lanamiz.</p>
+    <div class="notice">🔒 Parol yoki Telegram tasdiqlash kodini hech kimga bermang. Buyurtma uchun telefon raqamingizning o‘zi yetarli.</div>
+  </section>
+
+  <h2>Premium paketlari</h2>
+  <h3 style="color:#83c4ff;margin:12px 0">1. Oddiy Premium</h3>
+  <section class="plans">
+    <article class="plan"><div><span class="tag">1 OY</span><div class="duration">1 oylik</div></div><div class="price" id="p1">45 000 so‘m</div><div class="cost">Xarid narxi: 35 990 so‘m</div><div class="profit">Foyda: 9 010 so‘m</div></article>
+    <article class="plan"><div><span class="tag">12 OY</span><div class="duration">12 oylik</div></div><div class="price" id="p12a">175 000 so‘m</div><div class="cost">Xarid narxi: 169 990 so‘m</div><div class="profit">Foyda: 5 010 so‘m</div></article>
+  </section>
+  <h3 style="color:#83c4ff;margin:12px 0">2. Hadya paketi</h3>
+  <section class="plans">
+    <article class="plan"><div><span class="tag">3 OY</span><div class="duration">3 oylik</div></div><div class="price" id="p3">175 000 so‘m</div><div class="cost">Xarid narxi: 155 999 so‘m</div><div class="profit">Foyda: 19 001 so‘m</div></article>
+    <article class="plan"><div><span class="tag">6 OY</span><div class="duration">6 oylik</div></div><div class="price" id="p6">235 000 so‘m</div><div class="cost">Xarid narxi: 209 999 so‘m</div><div class="profit">Foyda: 25 001 so‘m</div></article>
+    <article class="plan"><div><span class="tag">12 OY</span><div class="duration">12 oylik</div></div><div class="price" id="p12">410 000 so‘m</div><div class="cost">Xarid narxi: 379 999 so‘m</div><div class="profit">Foyda: 30 001 so‘m</div></article>
+  </section>
+
+  <section class="panel">
+    <h2>💳 Humo orqali to‘lov</h2>
+    <p class="small">Buyurtma yuborilgach, to‘lovni quyidagi karta ma’lumotlari orqali amalga oshiring. Karta raqami va karta egasi nomini o‘zingiz Acode’da kiriting.</p>
+    <div class="summary" style="display:block">
+      <div class="small">Humo karta raqami</div>
+      <strong id="humoNumber" style="font-size:20px;letter-spacing:1px">8600 XXXX XXXX XXXX</strong>
+      <button class="btn secondary" type="button" id="copyCardBtn">Karta raqamini nusxalash</button>
+      <div class="small" style="margin-top:12px">Karta egasi</div>
+      <b id="humoOwner">KARTA EGASI ISMI</b>
+    </div>
+    <p class="hint">Muhim: bu sahifa bankning rasmiy to‘lov shlyuzi emas. Mijoz pulni Humo kartaga o‘tkazadi va chekni Telegram akkauntingizga o‘zi yuboradi. Haqiqiy karta ma’lumotlarini faqat o‘zingiz fayl ichiga kiriting; bu yerga chatga yozishingiz shart emas.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Buyurtma ma’lumotlari</h2>
+    <form id="orderForm">
+      <div class="grid">
+        <div><label for="name">Ismingiz</label><input id="name" placeholder="Masalan, Aziz" required maxlength="60"></div>
+        <div><label for="phone">Telegram ulangan telefon raqami</label><input id="phone" type="tel" placeholder="+998 90 123 45 67" required maxlength="20"></div>
+        <div><label for="duration">Premium turi va muddati</label><select id="duration"><optgroup label="Oddiy Premium"><option value="1">1 oylik — 45 000 so‘m</option><option value="12a">12 oylik — 175 000 so‘m</option></optgroup><optgroup label="Hadya paketi"><option value="3">3 oylik — 175 000 so‘m</option><option value="6">6 oylik — 235 000 so‘m</option><option value="12">12 oylik — 410 000 so‘m</option></optgroup></select></div>
+        <div><label for="contact">Siz bilan qanday bog‘lanamiz?</label><select id="contact"><option>Telegram</option><option>Telefon qo‘ng‘irog‘i</option></select></div>
+      </div>
+      <div class="summary"><div><div class="small">Tanlangan paket narxi</div><strong id="total">175 000 so‘m</strong></div><div style="text-align:right"><div class="small">To‘lov</div><b>Operator bilan kelishiladi</b></div></div>
+      <label for="note" style="margin-top:15px">Izoh (ixtiyoriy)</label><textarea id="note" rows="2" placeholder="Qo‘shimcha savolingiz bo‘lsa yozing"></textarea>
+      <button class="btn" type="submit">Buyurtmani tayyorlash</button>
+      <div class="hint">Buyurtma matni Telegram akkauntingizga yuborish uchun tayyorlanadi. Telegram ochilgach, xabarni o‘zingiz “Send/Yuborish” tugmasi bilan jo‘nating.</div>
+      <div class="status" id="status" role="status"></div>
+      <button class="btn secondary" id="copyBtn" type="button" style="display:none">Buyurtma matnini nusxalash</button>
+      <button class="btn secondary" id="shareBtn" type="button" style="display:none">Buyurtmani @Xakimboyev_02 ga yuborish</button>
+      <a class="btn secondary" id="receiptBtn" href="https://t.me/Xakimboyev_02?text=Oson%20Premium%20buyurtmasi%20uchun%20to%27lov%20chekini%20yuboryapman" target="_blank" rel="noopener" style="display:none;text-align:center;text-decoration:none">To‘lov chekini Telegramga yuborish</a>
+    </form>
+  </section>
+
+  <details class="panel admin">
+    <summary>Egasi uchun: narx va daromad sozlamalari</summary>
+    <p>Bu hisob-kitob namunaviy. Skrinshotdagi xarid narxlari asosida sotuv narxlari misol tariqasida qo‘yilgan. Haqiqiy xarid narxingiz o‘zgarsa, quyida tahrirlang. Bu bo‘lim mijozlardan yashirilmagan — saytni internetga joylashdan oldin olib tashlash yoki admin sahifasiga ko‘chirish tavsiya qilinadi.</p>
+    <div class="grid">
+      <div><label for="cost1">Oddiy 1 oy xarid narxi</label><input id="cost1" type="number" value="35990" min="0"></div>
+      <div><label for="sell1">Oddiy 1 oy sotuv narxi</label><input id="sell1" type="number" value="45000" min="0"></div>
+      <div><label for="cost12a">Oddiy 12 oy xarid narxi</label><input id="cost12a" type="number" value="169990" min="0"></div>
+      <div><label for="sell12a">Oddiy 12 oy sotuv narxi</label><input id="sell12a" type="number" value="175000" min="0"></div>
+      <div><label for="cost3">Hadya 3 oy xarid narxi</label><input id="cost3" type="number" value="155999" min="0"></div>
+      <div><label for="sell3">Hadya 3 oy sotuv narxi</label><input id="sell3" type="number" value="175000" min="0"></div>
+      <div><label for="cost6">Hadya 6 oy xarid narxi</label><input id="cost6" type="number" value="209999" min="0"></div>
+      <div><label for="sell6">Hadya 6 oy sotuv narxi</label><input id="sell6" type="number" value="235000" min="0"></div>
+      <div><label for="cost12">Hadya 12 oy xarid narxi</label><input id="cost12" type="number" value="379999" min="0"></div>
+      <div><label for="sell12">Hadya 12 oy sotuv narxi</label><input id="sell12" type="number" value="410000" min="0"></div>
+    </div>
+    <hr style="border-color:#29384e;margin:18px 0">
+    <h3>Humo karta ma’lumotlari (o‘zingiz to‘ldiring)</h3>
+    <div class="grid">
+      <div><label for="cardNumberInput">Humo karta raqami</label><input id="cardNumberInput" inputmode="numeric" maxlength="23" value="8600 XXXX XXXX XXXX"></div>
+      <div><label for="cardOwnerInput">Karta egasi</label><input id="cardOwnerInput" value="KARTA EGASI ISMI"></div>
+    </div>
+    <button class="btn secondary" id="updateCardBtn" type="button">Karta ma’lumotlarini sahifada ko‘rsatish</button>
+    <button class="btn secondary" id="updatePrices" type="button">Narxlarni yangilash</button>
+    <div id="profitReport" class="small" style="margin-top:14px;line-height:1.9"></div>
+  </details>
+  <div class="foot">© Oson Premium • Mustaqil buyurtma sahifasi. Telegram bilan rasmiy hamkorlikni anglatmaydi.</div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const fmt=n=>Math.max(0,Number(n)||0).toLocaleString('uz-UZ')+' so‘m';
+const plans={
+ '1':{cost:$('cost1'),sell:$('sell1'),label:'Oddiy Premium — 1 oy',card:'p1'},
+ '12a':{cost:$('cost12a'),sell:$('sell12a'),label:'Oddiy Premium — 12 oy',card:'p12a'},
+ '3':{cost:$('cost3'),sell:$('sell3'),label:'Hadya paketi — 3 oy',card:'p3'},
+ '6':{cost:$('cost6'),sell:$('sell6'),label:'Hadya paketi — 6 oy',card:'p6'},
+ '12':{cost:$('cost12'),sell:$('sell12'),label:'Hadya paketi — 12 oy',card:'p12'}
+};
+let lastMessage='';
+function update(){
+ for(const key of Object.keys(plans)){
+  const p=plans[key], sell=Number(p.sell.value)||0, cost=Number(p.cost.value)||0;
+  $(p.card).textContent=fmt(sell);
+  const card=$(p.card).closest('.plan');
+  card.querySelector('.cost').textContent='Xarid narxi: '+fmt(cost);
+  card.querySelector('.profit').textContent='Foyda: '+fmt(sell-cost);
+  const option=document.querySelector('#duration option[value="'+key+'"]');
+  if(option) option.textContent=p.label.replace('Oddiy Premium — ','').replace('Hadya paketi — ','')+' — '+fmt(sell);
+ }
+ const d=$('duration').value;
+ $('total').textContent=fmt(plans[d].sell.value);
+ $('profitReport').innerHTML=Object.keys(plans).map(k=>plans[k].label+': foyda = '+fmt(Number(plans[k].sell.value)-Number(plans[k].cost.value))).join('<br>');
+}
+$('duration').addEventListener('change',update);
+$('updatePrices').addEventListener('click',update);
+$('orderForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const d=$('duration').value, name=$('name').value.trim(), phone=$('phone').value.trim();
+ const message='OSON PREMIUM — YANGI BUYURTMA\nIsm: '+name+'\nTelefon: '+phone+'\nPaket: '+plans[d].label+'\nNarx: '+fmt(plans[d].sell.value)+'\nAloqa: '+$('contact').value+'\nIzoh: '+($('note').value.trim()||'yo‘q')+'\n\nTo‘lovdan keyin chekni @Xakimboyev_02 ga yuboraman.';
+ lastMessage=message;$('status').style.display='block';$('status').textContent='Buyurtma matni tayyor. Telegram ochiladi — xabarni yuborishni tasdiqlang. To‘lovdan keyin chekni ham shu akkauntga yuboring.\n\n'+message;
+ $('copyBtn').style.display='block';$('shareBtn').style.display='block';$('receiptBtn').style.display='inline-block';
+});
+$('copyBtn').addEventListener('click',async()=>{
+ try{await navigator.clipboard.writeText(lastMessage);$('copyBtn').textContent='Nusxalandi ✓';}
+ catch(e){const t=document.createElement('textarea');t.value=lastMessage;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();$('copyBtn').textContent='Nusxalandi ✓';}
+});
+$('shareBtn').addEventListener('click',()=>{location.href='https://t.me/Xakimboyev_02?text='+encodeURIComponent(lastMessage)});
+$('copyCardBtn').addEventListener('click',async()=>{
+ const card=$('humoNumber').textContent.trim();
+ try{await navigator.clipboard.writeText(card);$('copyCardBtn').textContent='Nusxalandi ✓';}
+ catch(e){const t=document.createElement('textarea');t.value=card;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();$('copyCardBtn').textContent='Nusxalandi ✓';}
+});
+$('updateCardBtn').addEventListener('click',()=>{
+ $('humoNumber').textContent=$('cardNumberInput').value.trim()||'KARTA RAQAMI KIRITILMAGAN';
+ $('humoOwner').textContent=$('cardOwnerInput').value.trim()||'KARTA EGASI KIRITILMAGAN';
+});
+update();
+</script>
+</body>
+</html>
